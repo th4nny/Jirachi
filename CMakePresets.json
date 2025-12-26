@@ -1,0 +1,55 @@
+{
+  "version": 3,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 12,
+    "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "debug",
+      "displayName": "Debug",
+      "description": "Debug build with tests",
+      "binaryDir": "${sourceDir}/build/debug",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "JNIHOOK_BUILD_TESTS": "ON",
+        "JNIHOOK_RUN_TESTS_AUTO": "ON"
+      }
+    },
+    {
+      "name": "release",
+      "displayName": "Release",
+      "description": "Release build with tests",
+      "binaryDir": "${sourceDir}/build/release",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "JNIHOOK_BUILD_TESTS": "ON",
+        "JNIHOOK_RUN_TESTS_AUTO": "ON"
+      }
+    },
+    {
+      "name": "debug-no-auto-test",
+      "displayName": "Debug (Manual Tests)",
+      "description": "Debug build, run tests manually",
+      "binaryDir": "${sourceDir}/build/debug-manual",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "JNIHOOK_BUILD_TESTS": "ON",
+        "JNIHOOK_RUN_TESTS_AUTO": "OFF"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "debug",
+      "configurePreset": "debug",
+      "displayName": "Build Debug"
+    },
+    {
+      "name": "release",
+      "configurePreset": "release",
+      "displayName": "Build Release"
+    }
+  ]
+}
